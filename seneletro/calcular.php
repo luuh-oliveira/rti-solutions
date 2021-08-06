@@ -1,5 +1,6 @@
 <?php
 
+
 $nome = $_POST["nome"];
 $endereco = $_POST["endereco"];
 $consumo = $_POST["consumo"];
@@ -15,6 +16,9 @@ if ($consumo > 120) {
     $textoConsumo = "Consumo: $consumo kWh";
     $textoAgradecimento = "Obrigado por economizar!";
 }
+
+
+
 ?>
 
 <!DOCTYPE html>
