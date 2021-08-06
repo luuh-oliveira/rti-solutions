@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcular valor de viagem</title>
+</head>
+<body>
+    <form method="POST" action="./calcular.php">
+        <h1>Valor da viagem</h1>
+        <label for="cidadeOrigem" >Cidade de Origem</label>
+        <input id="cidadeOrigem" name="cidadeOrigem" />
+
+        <label for="cidadeDestino">Cidade de Destino</label>
+        <input id="cidadeDestino" name="cidadeDestino" />
+
+        <label for="distancia">Distância em KM</label>
+        <input id="distancia" name="distancia" />
+
+        <label for="pedagioQuantidade">Quantidade de Pedágios</label>
+        <input id="pedagioQuantidade" name="pedagioQuantidade" />
+
+        <button>Calcular</button>
+    </form>
+</body>
+</html>
