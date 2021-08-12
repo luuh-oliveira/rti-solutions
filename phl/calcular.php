@@ -1,14 +1,21 @@
 
 <?php
 
-$cidadeOrigem = $_POST["cidadeOrigem"];
-$cidadeDestino = $_POST["cidadeDestino"];
-$distancia = $_POST["distancia"];
-$pedagioQuantidade = $_POST["pedagioQuantidade"];
-$pedagioValor = 9.40;
-$valorKm = 6;
+if(isset($_POST["cidadeOrigem"]) && isset($_POST["cidadeDestino"]) && 
+    isset($_POST["distancia"]) && isset($_POST["pedagioQuantidade"])){
 
-$valorTotal = ($pedagioQuantidade * $pedagioValor) + ($distancia * $valorKm);
+    $cidadeOrigem = $_POST["cidadeOrigem"];
+    $cidadeDestino = $_POST["cidadeDestino"];
+    $distancia = $_POST["distancia"];
+    $pedagioQuantidade = $_POST["pedagioQuantidade"];
+    $pedagioValor = 9.40;
+    $valorKm = 6;
+
+    $valorTotal = ($pedagioQuantidade * $pedagioValor) + ($distancia * $valorKm);
+
+} else {
+    echo "Você não enviou os dados!";
+}
 
 
 ?>
