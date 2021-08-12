@@ -8,21 +8,18 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
     font-family: Arial, Helvetica, sans-serif;
 
-}
-
-.formulario{
-    justify-content: center;
-    align-items: center;
+    background-image: linear-gradient(#ccc, white);
 }
 
 form{
     display: flex;
     flex-direction: column;
-
     box-shadow: 0px 5px 10px gray,0px 5px 20px gray;
     padding: 30px;
     background-color: white;
@@ -32,10 +29,30 @@ h1{
     margin-bottom: 10px;
 }
 
-input{
+#nome, #salarioAtual, select{
     width: 100%;
     margin-bottom: 10px;
     height: 30px;
+}
+
+#genero{
+    margin-bottom: 15px;
+}
+
+.genero{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+}
+
+.radio{
+    display: flex;
+    margin-top: 10px;
+}
+
+div input{
+    display: flex;
+    height: 5px;
 }
 
 button{
@@ -43,7 +60,6 @@ button{
     background-color: transparent;
     border: 2px solid black;
     height: 30px;
-
     font-weight: bold;
     transition: .2s;
     cursor: pointer;
@@ -53,20 +69,3 @@ button:hover{
     box-shadow: 0px 0px 20px black;
 }
 
-.vermelho{
-    background-image: linear-gradient(rgba(255, 0, 0, 0.593), white);
-    
-}
-
-.vermelho .textoConsumo{
-    color: red;
-}
-
-.verde{
-    background-image: linear-gradient(rgba(49, 209, 49, 0.432), white);
-}
-
-.verde .textoAgradecimento{
-    margin-top: 30px;
-    color: green;
-}

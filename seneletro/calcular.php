@@ -18,7 +18,6 @@ if ($consumo > 120) {
 }
 
 
-
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +32,7 @@ if ($consumo > 120) {
     <h1>Conta de luz de <?= $nome ?></h1>
     <h3><?= $endereco ?></h3>
     <h3 class = "textoConsumo"><?= $textoConsumo ?></h3>
-    <h3>Valor a pagar: <h2> R$<?= number_format($valorTotal, 2) ?></h2></h3>
+    <h3>Valor a pagar: <h2> R$<?= number_format($valorTotal, 2, ",", ".") ?></h2></h3>
     <h3 class = "textoAgradecimento"><?= $textoAgradecimento ?></h3>
 </body>
 </html>

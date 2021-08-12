@@ -7,19 +7,19 @@
     <title>Calcular conta de luz</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body class="formulario">
     <form method="POST" action="./calcular.php">
         <h1>Conta de luz</h1>
         <label for="nome" >Nome Completo</label>
         <input id="nome" name="nome" required/>
 
-        <label for="endereco">Endereço</label>
+        <label for="endereco">Endereço Completo</label>
         <input id="endereco" name="endereco" required/>
 
         <label for="consumo">Consumo em Quilowatts/hora</label>
-        <input id="consumo" name="consumo" required/>
+        <input type="number" id="consumo" name="consumo" required/>
 
-        <button>Calcular</button>
+        <button>Gerar conta</button>
     </form>
 </body>
 </html>

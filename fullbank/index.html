@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calcular.php"></script>
+    <title>Cálculo do aumento salarial</title>
+</head>
+
+<body>
+    <form method="POST" action="./calcular.php">
+        <h1>Aumento salarial</h1>
+        <label for="nome">Nome do funcionário</label>
+        <input id="nome" name="nome" required />
+
+        <label for="salarioAtual">Salário atual</label>
+        <input type="number" id="salarioAtual" name="salarioAtual" required />
+
+        <div class="genero">
+            <label id="genero">Gênero</label>
+
+            <div class="radio">
+
+                <label for="m">M</label>
+                <input type="radio" value="M" id="m" name="genero" required />
+
+                <label for="f">F</label>
+                <input type="radio" value="F" id="f" name="genero" required />
+
+                <label for="outro">Outro</label>
+
+                <input type="radio" value="Outro" id="outro" name="genero" required />
+            </div>
+
+        </div>
+
+        <label for="cargo">Cargo</label>
+        <select name="cargo" id="cargo">
+            <option value="gerente">Gerente</option>
+            <option value="gerente">Gerente</option>
+            <option value="gerente">Gerente</option>
+            <option value="gerente">Gerente</option>
+            <option value="gerente">Gerente</option>
+        </select>
+
+        <button>Calcular</button>
+    </form>
+</body>
+
+</html>
