@@ -29,7 +29,7 @@ if(isset($_POST["cidadeOrigem"]) && isset($_POST["cidadeDestino"]) &&
     <title>Resultado</title>
 </head>
 <body>
-    <h1>A viagem entre <?= $cidadeOrigem ?> e <?= $cidadeDestino ?> irá custar o valor total de R$ <span><?= number_format($valorTotal, 2) ?></span>.</h1>
+    <h1>A viagem entre <?= $cidadeOrigem ?> e <?= $cidadeDestino ?> irá custar o valor total de R$ <span><?= number_format($valorTotal, 2, ",", ".") ?></span>.</h1>
     
 </body>
 </html>
