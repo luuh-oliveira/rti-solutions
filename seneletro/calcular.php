@@ -28,7 +28,7 @@ if ($consumo > 120) {
     <link rel="stylesheet" href="style.css">
     <title>Resultado</title>
 </head>
-<body class = "<?= $class ?>">
+<body class = "<?= $class ?>"> 
     <h1>Conta de luz de <?= $nome ?></h1>
     <h3><?= $endereco ?></h3>
     <h3 class = "textoConsumo"><?= $textoConsumo ?></h3>

@@ -24,18 +24,18 @@
             <div class="radio">
 
                 <div class="input">
-                    <input type="radio" value="M" id="m" name="genero" required />
-                    <label for="m">M</label>
+                    <input type="radio" value="m" id="m" name="genero" required />
+                    <label for="m">Masculino</label>
                 </div>
 
                 <div class="input">
-                    <input type="radio" value="F" id="f" name="genero" required />
-                    <label for="f">F</label>
+                    <input type="radio" value="f" id="f" name="genero" required />
+                    <label for="f">Feminino</label>
                 </div>
 
 
                 <div class="input">
-                    <input type="radio" value="Outro" id="outro" name="genero" required />
+                    <input type="radio" value="outro" id="outro" name="genero" required />
                     <label for="outro">Outro</label>
                 </div>
                 
@@ -45,12 +45,15 @@
         </div>
 
         <label for="cargo">Cargo</label>
-        <select name="cargo" id="cargo">
+        <select name="cargo" id="cargo" required>
+            <option value="">Selecione</option>
             <option value="gerente">Gerente</option>
-            <option value="gerente">Gerente</option>
-            <option value="gerente">Gerente</option>
-            <option value="gerente">Gerente</option>
-            <option value="gerente">Gerente</option>
+            <option value="desenvolvedor">Desenvolvedor</option>
+            <option value="engenheiro de software">Engenheiro de Software</option>
+            <option value="gerente de projetos">Gerente de Projetos</option>
+            <option value="analista de sistemas">Analista de Sistemas</option>
+            <option value="DBA">DBA</option>
+
         </select>
 
         <button>Calcular</button>
