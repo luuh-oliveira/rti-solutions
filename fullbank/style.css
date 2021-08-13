@@ -41,18 +41,26 @@ h1{
 
 .genero{
     display: flex;
-    height: 70px;
+    flex-direction: column;
+    height: 150px;
     justify-content: center;
 }
 
 .radio{
     display: flex;
-    margin-top: 10px;
+    flex-direction: column;
 }
 
 div input{
     display: flex;
-    height: 5px;
+    height: 18px;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 button{
